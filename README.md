@@ -7,6 +7,6 @@ Download the app-release.apk from this repo to try the widget yourself.
 
 API made my Zuzana Pelechova on www.apify.com
 
-Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">Error! Hyperlink reference not valid.>
+Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from https://www.flaticon.com/" 
 
-<div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">Error! Hyperlink reference not valid.>
+<div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from https://www.flaticon.com/" 
