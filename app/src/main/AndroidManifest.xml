@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.saluja_apps.covid_widget">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_covid_widget_icon_foreground"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_covid_widget_icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name="com.saluja_apps.covid_widget.widgets.CovidWidgetConfig">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.saluja_apps.covid_widget.MainActivity"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name="com.saluja_apps.covid_widget.widgets.CovidWidgetProvider"
+            android:icon="@mipmap/ic_covid_widget_icon_round"
+            android:label="@string/covid_widget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="com.saluja_apps.covid_widget.widgets.ACTION_WIDGET_CLICK" />
+                <action android:name="android.appwidget.action.APPWIDGET_DELETED" />
+                <action android:name="com.saluja_apps.covid_widget.widgets.CovidWidgetProvider.prevButtonOnClickAction" />
+                <action android:name="com.saluja_apps.covid_widget.widgets.CovidWidgetProvider.nextButtonOnClickAction" />
+                <action android:name="com.saluja_apps.covid_widget.widgets.CovidWidgetProvider.configSaveButtonOnClickAction" />
+                <action android:name="com.saluja_apps.covid_widget.widgets.CovidWidgetProvider.setIndiaData" />
+                <action android:name="com.saluja_apps.covid_widget.widgets.CovidWidgetProvider.loadIndiaDataIntoAllWidgetInstances" />
+                <action android:name="com.saluja_apps.covid_widget.widgets.CovidWidgetProvider.addStateButtonOnClickAction" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_provider_info" />
+        </receiver> <!-- so other apps cannot access my widget -->
+
+        <receiver android:name="com.saluja_apps.covid_widget.Receivers.BootCompletedIntentReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.QUICKBOOT_POWERON"/>
+                <!--For HTC devices-->
+                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

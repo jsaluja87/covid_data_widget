@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView android:layout_width="match_parent"
+        android:layout_above="@id/mainDoneButtonId"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context="com.saluja_apps.covid_widget.MainActivity">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/covid_widget_preview"
+                android:background="@color/colorTransparent"
+                android:id="@+id/mainWidgetPreviewImageId"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="@dimen/default_main_activity_view_padding"
+                android:layout_marginStart="@dimen/default_main_activity_view_padding"
+                android:layout_marginEnd="@dimen/default_main_activity_view_padding"
+                android:layout_alignParentTop="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Widget Preview Only"
+                android:id="@+id/mainWidgetPreviewTextViewId"
+                android:textSize="10sp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/default_main_activity_view_padding"
+                android:textColor="#F62D2D"
+                android:layout_marginStart="@dimen/default_main_activity_view_padding"
+                android:layout_marginEnd="@dimen/default_main_activity_view_padding"
+                android:layout_below="@id/mainWidgetPreviewImageId" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mainWidgetTextViewId"
+                android:text=""
+                android:textSize="16sp"
+                android:layout_marginStart="@dimen/default_main_activity_view_padding"
+                android:layout_marginEnd="@dimen/default_main_activity_view_padding"
+                android:layout_alignStart="@id/mainWidgetPreviewImageId"
+                android:layout_below="@id/mainWidgetPreviewTextViewId" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mainWidgetInstallHeadingTextViewId"
+                android:text="Widget Installation:"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginStart="@dimen/default_main_activity_view_padding"
+                android:layout_marginEnd="@dimen/default_main_activity_view_padding"
+                android:layout_alignStart="@id/mainWidgetPreviewImageId"
+                android:layout_below="@id/mainWidgetTextViewId" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/mainWidgetInstallTextViewId"
+                android:textSize="16sp"
+                android:layout_marginStart="@dimen/default_main_activity_view_padding"
+                android:layout_marginEnd="@dimen/default_main_activity_view_padding"
+                android:layout_alignStart="@id/mainWidgetPreviewImageId"
+                android:layout_below="@id/mainWidgetInstallHeadingTextViewId" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/mainSourceTextViewId"
+                android:textSize="10sp"
+                android:layout_alignStart="@id/mainWidgetPreviewImageId"
+                android:layout_margin="@dimen/default_main_activity_view_padding"
+                android:layout_below="@id/mainWidgetInstallTextViewId"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Done"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/round_button"
+        android:id="@+id/mainDoneButtonId"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/default_main_activity_view_padding"
+        />
+</RelativeLayout>

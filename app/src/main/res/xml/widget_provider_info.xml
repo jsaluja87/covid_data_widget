@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:initialLayout="@layout/widget_layout"
+    android:minWidth="331dp"
+    android:minHeight="113dp"
+    android:widgetCategory="home_screen"
+    android:minResizeWidth="331dp"
+    android:minResizeHeight="113dp"
+    android:resizeMode="horizontal|vertical"
+    android:layout_height="wrap_content"
+    android:background="#00000000"
+    android:layout_width="wrap_content"
+    android:configure="com.saluja_apps.covid_widget.widgets.CovidWidgetConfig"
+    android:previewImage="@drawable/covid_widget_preview"
+    >
+</appwidget-provider>

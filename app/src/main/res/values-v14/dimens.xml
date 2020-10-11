@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="default_widget_content_type_size">18sp</dimen>
+    <dimen name="default_widget_heading_size">16sp</dimen>
+    <dimen name="default_widget_detail_size">14sp</dimen>
+    <dimen name="default_widget_new_case_death_start_margin">20dp</dimen>
+    <dimen name="default_widget_view_padding">5dp</dimen>
+
+
+    <dimen name="config_list_view_text_size">20sp</dimen>
+    <dimen name="default_config_view_padding">5dp</dimen>
+    <dimen name="default_main_activity_view_padding">10dp</dimen>
+
+    <dimen name="MainLsViewDivHeight">2dp</dimen>
+</resources>

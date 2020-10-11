@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.saluja_apps.covid_widget.widgets.CovidWidgetConfig">
+    <!--background color,textsize,textcolor(will change base
+    d on background color-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/widget_config_bkgrnd_color_textview"
+        android:textSize="24sp"
+        android:id="@+id/widget_config_select_states_textview_id"
+        android:padding="@dimen/default_config_view_padding"
+        />
+
+    <ListView
+        android:id="@+id/config_list_view_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/widget_config_select_states_textview_id"
+        android:layout_above="@id/widget_config_save_button_id"
+        android:background="@color/ConfigLsVColor"
+        android:divider="@color/ConfigLsViDivColor"
+        android:dividerHeight="@dimen/MainLsViewDivHeight"
+        android:padding="@dimen/default_config_view_padding"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/round_button"
+        android:id="@+id/widget_config_save_button_id"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/default_config_view_padding"
+        />
+
+</RelativeLayout>

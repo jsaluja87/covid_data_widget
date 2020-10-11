@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1FAAF4</color>
+    <color name="colorPrimaryDark">#1C8FE6</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="colorWhite">#F4F3F3</color>
+    <color name="color_default_widget_text_view">#000000</color>
+    <color name="colorTransparent">#00000000</color>
+
+    <color name="colorOutlook">#FF0078d4</color>
+    <color name="colorOutlookLight">#4FAAEF</color>
+
+
+    <color name="ConfigLsVColor">#ffffff</color>
+    <color name="ConfigLsViDivColor">#a19898</color>
+
+    <!-- card colors -->
+    <color name="card_background">#ffffff</color>
+    <color name="card_shadow_1">#CFCCCC</color>
+    <color name="card_shadow_2">#B6B6B6</color>
+    <color name="card_detailing">#eee</color>
+</resources>

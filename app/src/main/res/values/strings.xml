@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Covid Widget</string>
+
+    <string name="covid_widget">Covid Widget</string>
+    <string name="widget_config_bkgrnd_color_textview">Select States</string>
+    <string name="widget_config_state_select_state">select something</string>
+    <string name="config_spinner_light_option">Light</string>
+    <string name="config_spinner_dark_option">Dark</string>
+    <string name="config_spinner_color_option">Color</string>
+    <string name="config_spinner_default_rounded_option">Rounded</string>
+
+
+    <string name="country_india">India</string>
+    <string name="refresh_action_intent">action_from_refresh_button</string>
+    <string-array
+        name="india_predefined_state_array">
+        <item>Andaman and Nicobar Islands</item>
+        <item>Andhra Pradesh</item>
+        <item>Arunachal Pradesh</item>
+        <item>Assam</item>
+        <item>Bihar</item>
+        <item>Chandigarh</item>
+        <item>Chhattisgarh</item>
+        <item>Dadra and Nagar Haveli and Daman and Diu</item>
+        <item>Delhi</item>
+        <item>Goa</item>
+        <item>Gujarat</item>
+        <item>Haryana</item>
+        <item>Himachal Pradesh</item>
+        <item>Jammu and Kashmir</item>
+        <item>Jharkhand</item>
+        <item>Karnataka</item>
+        <item>Kerala</item>
+        <item>Ladakh</item>
+        <item>Madhya Pradesh</item>
+        <item>Maharashtra</item>
+        <item>Manipur</item>
+        <item>Meghalaya</item>
+        <item>Mizoram</item>
+        <item>Nagaland</item>
+        <item>Odisha</item>
+        <item>Puducherry</item>
+        <item>Punjab</item>
+        <item>Rajasthan</item>
+        <item>Sikkim</item>
+        <item>Tamil Nadu</item>
+        <item>Telengana</item>
+        <item>Tripura</item>
+        <item>Uttarakhand</item>
+        <item>Uttar Pradesh</item>
+        <item>West Bengal</item>
+
+    </string-array>
+</resources>
